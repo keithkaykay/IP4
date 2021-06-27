@@ -35,6 +35,8 @@ body{
   position: fixed;
   top: 0;
   color: yellow;
+  height: auto;
+  width: auto;
 }
 
 .navbar a {
