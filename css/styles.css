@@ -29,38 +29,6 @@ body{
   top: 0;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  color: yellow;
-  height: auto;
-  width: auto;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #f1f1f1;
-  color: black;
-  top: 0;
-}
-
-.navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-  top: 0;
-}
-
 .five{
   background-image: url(../img/peter-bravo-de-los-rios-OklpRh8-Sns-unsplash.jpg);
   height: 120vh;
