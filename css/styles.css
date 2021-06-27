@@ -62,13 +62,11 @@ body{
 }
 
 .five{
-  background-image: url(../img/pizza1.jpg);
+  background-image: url(../img/peter-bravo-de-los-rios-OklpRh8-Sns-unsplash.jpg);
   height: 60vh;
   float: right;
   background-size: cover;
   width: 100%;
-  color:midnightblue ;
+  color:black;
   font-size: large;
-  text-align: center;
-
 }
