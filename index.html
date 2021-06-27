@@ -26,12 +26,14 @@
       <div class="card">
         <img class="pole" src="img/logo2.png">
         <div class="five">
-          <h2>ORDER YOUR PIZZA HERE</h2>
+          <div class="ere">
+            <h2>ORDER YOUR PIZZA HERE</h2>
+          </div>
           <br>
           
           <form id="info" action="">
             <h4>Size</h4>
-            <label for="">Choose your pizza size</label>
+            <label for="crust">Choose your pizza size</label>
             <select class="form-control" name="size" id="size">
                 <option value="1200">Large</option>
                 <option value="900">Medium</option>
@@ -39,7 +41,7 @@
             </select>
             <br>
             <h4>Crust</h4>
-            <label for="">Choose pizza crust</label>
+            <label for="crust">Choose pizza crust</label>
             <select class="form-control" name="crust" id="crust">
               <option value="150">Vegan Friendly</option>
               <option value="150">Glutten Free</option>
@@ -50,14 +52,18 @@
             </select>
             <br>
             <h4>Topping</h4>
-            <label for="">Choose topping to be applied</label>
+            <label for="topping">Choose topping to be applied</label>
             <select class="form-control" name="topping" id="topping">
               <option value="200">Tomatoes</option>
               <option value="300">Onions</option>
-              <option value="100">Chillies</option>
+              <option value="100">Mushrooms</option>
               <option value="150">Pineapples</option>
-              <option value="400">Lettuce</option>
+              <option value="400">Chicken</option>
             </select>
+            <br>
+            <h4>Number</h4>
+            <label for="number">How many pizzas do you wabt to buy?</label>
+            <input class="form-control" type="number" name="number" id="number" placeholder="1" max="" min="0">
           </form>
         </div>
       </div>
