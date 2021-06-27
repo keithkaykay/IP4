@@ -1,6 +1,9 @@
 html{
   scroll-behavior: smooth;
 }
+body{
+  background-color: burlywood;
+}
 #one{
   font-family: "Trirong", serif;
   background-image: url("../img/ivan-torres-MQUqbmszGGM-unsplash.jpg");
@@ -10,6 +13,11 @@ html{
   color: whitesmoke;
   text-align: center;
 }
+#pole2{
+  text-decoration: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: underline;
+}
 .two{
   color: aqua;
 }
@@ -18,14 +26,15 @@ html{
   background-color: #333;
   overflow: hidden;
   position: fixed;
-  bottom: 0;
+  top: 0;
 }
 
 .navbar {
   overflow: hidden;
   background-color: #333;
   position: fixed;
-  bottom: 0;
+  top: 0;
+  color: yellow;
 }
 
 .navbar a {
@@ -41,9 +50,23 @@ html{
 .navbar a:hover {
   background: #f1f1f1;
   color: black;
+  top: 0;
 }
 
 .navbar a.active {
   background-color: #04AA6D;
   color: white;
+  top: 0;
+}
+
+.five{
+  background-image: url(../img/pizza1.jpg);
+  height: 60vh;
+  float: right;
+  background-size: cover;
+  width: 100%;
+  color:midnightblue ;
+  font-size: large;
+  text-align: center;
+
 }
