@@ -45,7 +45,19 @@ function deliver() {
 var deliveryFee = 150
 
 function purchase(){
+  /* 
+  var size = document.getElementById("size").value;
+  var crust = document.getElementById("crust").value;
+  var topping = document.getElementById("topping").value;
+  var number = document.getElementById("number").value;
+  */
   var totals = (getSize() + getCrust() + getTopping() ) * getQuantity();
   var totaltotal = totals + deliveryFee;
+  var name2 = getName();
+  /*
+  alert(
+    "Thankyou " + name2 + ". " + "Your order is ," + size + ", " + crust + ", " + topping + ", and you have bought " + number + " of them." +  
+  );
+  */
   document.getElementById("totaltotal").innerHTML = totaltotal; 
 }
