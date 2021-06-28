@@ -93,13 +93,17 @@
                         <label for="name">What is your name?</label>
                         <input id="name" type="text" size="40" placeholder="Name..." required />
                         <br>
-                        <button onclick="deliver();" class="btn btn-primary" type="submit">Enter</button>
+                        <button onclick="deliver(); return false;" class="btn btn-primary" type="submit">Enter</button>
                     </div>
                 </form>
             </div><br>
             <div class="col-xs-12">
                 <h5>Thank you and Welcome again!</h5>
-                <br><br><br>
+                <br><br>
+                <button onclick="purchase(); return false;" class="btn btn-primary" type="submit">Checkout</button>
+                <br>
+                <h3 id="totaltotal"></h3>
+                <br><br>
                 <button class="btn btn-primary" type="button" onClick="window.location.reload();">Order Again</button>
             </div>
           </div>

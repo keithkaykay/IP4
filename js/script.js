@@ -28,10 +28,21 @@ function getLocation() {
   return (location);
 }
 
+function getName() {
+  var name = document.getElementById("name").value;
+  return (name);
+}
+
 function deliver() {
   var location2 = getLocation();
+  var name2 = getName();
 
   alert(
-    "We will deliver to " + location2
+    "Thankyou " + name2 + ". " + "We will deliver to " + location2 + "."
   );
+}
+
+function purchase() {
+  var totaltotal = totals + 150; 
+  document.getElementById("totaltotal").innerHTML = totaltotal;
 }

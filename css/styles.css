@@ -56,7 +56,7 @@ body{
 }
 .twenty{
   background-image: url(../img/pizza2.jpg);
-  height: 70vh;
+  height: 100vh;
   background-size: cover;
   width: 100%;
   color:black;
