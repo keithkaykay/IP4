@@ -51,9 +51,8 @@ body{
   color: azure;
 }
 .ere{
-  text-align: center;
   text-decoration: underline;
-  color: #04AA6D;
+  color: #cf164d;
 }
 .twenty{
   background-image: url(../img/pizza2.jpg);
@@ -65,7 +64,7 @@ body{
 }
 .fifty{
   font-family:Georgia, 'Times New Roman', Times, serif;
-  color:yellow;
+  color:rgb(0, 225, 255);
 }
 .col-xs-4{
   font-family: fantasy;

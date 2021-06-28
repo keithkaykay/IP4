@@ -87,15 +87,19 @@
                 <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
                 <form id="address-form">
                     <div class="col-xs-6">
-                        <label for="first-name"></label>
+                        <label for="location">Where do you live?</label>
                         <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
+                        <br>
+                        <label for="name">What is your name?</label>
+                        <input id="name" type="text" size="40" placeholder="Name..." required />
+                        <br>
                         <button onclick="deliver();" class="btn btn-primary" type="submit">Enter</button>
-                        <h3><span id="delivery-option"></span></h3>
                     </div>
                 </form>
             </div><br>
             <div class="col-xs-12">
                 <h5>Thank you and Welcome again!</h5>
+                <br><br><br>
                 <button class="btn btn-primary" type="button" onClick="window.location.reload();">Order Again</button>
             </div>
           </div>
