@@ -37,7 +37,7 @@
           </div>
           <br>
           
-          <form id="info" action="">
+          <form onsubmit="return false" id="info" action="">
             <h4>Size</h4>
             <label for="crust">Choose your pizza size</label>
             <select class="form-control" name="size" id="size">
@@ -75,13 +75,14 @@
           </form>
           <div class="col-xs-4" id="price-content">
             <br>
-            <h2>Price: Ksh <span id="totals"></span></h2>
+            <p>Price: Ksh <span id="totals"></span></p>
+            <button class="btn btn-primary" type="button" onClick="window.location.reload();">Order Again</button>
           </div>
         </div>
         <div class="twenty">
           <div class="fifty" id="price-content">
             <h2 class="ere" >Delivery</h2>
-            <p>We can also deliver right to your doorstep</p>
+            <p>We can also deliver right to you</p>
             <br>
             <div id="deliver" class="deliver">
                 <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>

@@ -20,8 +20,7 @@ function getQuantity() {
 
 function totalAmount() {
   var totals = (getSize() + getCrust() + getTopping() ) * getQuantity();
-  console.log (totals);
-  document.getElementById("totals").innerHTML = totals;  
+  document.getElementById("totals").innerHTML = totals; 
 } 
 
 function getLocation() {
