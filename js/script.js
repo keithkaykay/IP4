@@ -20,5 +20,19 @@ function getQuantity() {
 
 function totalAmount() {
   var totals = (getSize() + getCrust() + getTopping() ) * getQuantity();
-  return totals;
+  console.log (totals);
+  document.getElementById("totals").innerHTML = totals;  
 } 
+
+function getLocation() {
+  var location = document.getElementById("location").value;
+  return (location);
+}
+
+function deliver() {
+  var location2 = getLocation();
+
+  alert(
+    "We will deliver to " + location2
+  );
+}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tikka Lounge</title>
   </head>
 
@@ -25,6 +26,11 @@
     <div class="3">
       <div class="card">
         <img class="pole" src="img/logo2.png">
+        <div class="were">
+          <a href="https://us6.list-manage.com/contact-form?u=622194f72259dbddd891e8520&amp;form_id=d250d2ca38e0134e5e37033ebc2be6b6" method="post" id="mc-embedded-subscribe-form contact" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""><button style="color:rgb(202, 17, 226); border-radius: 50px;">Contact Us</button></a>
+          <a href="about.html"><button style="color:cadetblue; border-radius: 50px;">About Us</button></a>
+        </div>
+        <br><br>
         <div class="five">
           <div class="ere">
             <h2>ORDER YOUR PIZZA HERE</h2>
@@ -68,7 +74,7 @@
             <button type="submit" id="submit" value="sumbit" class="btn btn-primary"  onclick="totalAmount();">Order</button>
           </form>
           <div class="col-xs-4" id="price-content">
-            <h1 class="page-header">Cart</h1>
+            <br>
             <h2>Price: Ksh <span id="totals"></span></h2>
           </div>
         </div>
@@ -83,22 +89,28 @@
                     <div class="col-xs-6">
                         <label for="first-name"></label>
                         <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
-                        <button class="btn btn-primary" type="submit">Enter</button>
+                        <button onclick="deliver();" class="btn btn-primary" type="submit">Enter</button>
                         <h3><span id="delivery-option"></span></h3>
                     </div>
                 </form>
             </div><br>
-            <button type="btn" class="btn btn-primary" id="checkout-btn">Checkout</button><br><br>
-            <div id="order-details" class="col-xs-12">
-                <ul id="pizza-details"><strong>Your order is: </strong></ul>
-                <h5 id="pizza-details">Thank you and Welcome again!</h5>
+            <div class="col-xs-12">
+                <h5>Thank you and Welcome again!</h5>
             </div>
           </div>
         </div>
       </div>
     </div>
     <br>
-    
+    <div>
+      <footer id="footer" class="footer">
+       <h4> Keith Koech, 2021 </h4>
+       <a href="https://www.facebook.com/Keithrutokk/" class="fa fa-facebook"></a>
+       <a href="https://twitter.com/Keith_kaykay" class="fa fa-twitter"></a>
+       <a href="https://www.instagram.com/keith_kaykay_/" class="fa fa-instagram"></a>
+       <a href="https://www.snapchat.com/add/keithruto" class="fa fa-snapchat-ghost"></a>
+      </footer>
+    </div>
   </body>
 
 </html>

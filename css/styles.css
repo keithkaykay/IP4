@@ -39,6 +39,17 @@ body{
   font-size: large;
 }
 
+.were{
+  float: right;
+  text-align: center;
+}
+.ered{
+  float: right;
+}
+.gh{
+  text-align: center;
+  color: azure;
+}
 .ere{
   text-align: center;
   text-decoration: underline;
@@ -59,4 +70,16 @@ body{
 .col-xs-4{
   font-family: fantasy;
   color: rgb(68, 3, 105);
+}
+.footer{
+  text-align: center;
+
+}
+.sixty{
+  background-color: coral;
+  background-image: url(../img/pizzabg.jpg);
+  height: 100vh;
+}
+.deed{
+  text-decoration: underline;
 }
