@@ -20,14 +20,5 @@ function getQuantity() {
 
 function totalAmount() {
   var totals = (getSize() + getCrust() + getTopping() ) * getQuantity();
-  alert(
-    "You have Ordered " +
-    getQuantity("") +
-    " pizza," + 
-    "" +
-    " amounting to ksh. " +
-    totals +
-    "" +
-    " Thanks for your order welcome again."
-  );
-}
+  return totals;
+} 

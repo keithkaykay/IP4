@@ -67,6 +67,33 @@
             <br>
             <button type="submit" id="submit" value="sumbit" class="btn btn-primary"  onclick="totalAmount();">Order</button>
           </form>
+          <div class="col-xs-4" id="price-content">
+            <h1 class="page-header">Cart</h1>
+            <h2>Price: Ksh <span id="totals"></span></h2>
+          </div>
+        </div>
+        <div class="twenty">
+          <div class="fifty" id="price-content">
+            <h2 class="ere" >Delivery</h2>
+            <p>We can also deliver right to your doorstep</p>
+            <br>
+            <div id="deliver" class="deliver">
+                <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
+                <form id="address-form">
+                    <div class="col-xs-6">
+                        <label for="first-name"></label>
+                        <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
+                        <button class="btn btn-primary" type="submit">Enter</button>
+                        <h3><span id="delivery-option"></span></h3>
+                    </div>
+                </form>
+            </div><br>
+            <button type="btn" class="btn btn-primary" id="checkout-btn">Checkout</button><br><br>
+            <div id="order-details" class="col-xs-12">
+                <ul id="pizza-details"><strong>Your order is: </strong></ul>
+                <h5 id="pizza-details">Thank you and Welcome again!</h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>

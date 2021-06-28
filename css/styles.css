@@ -44,3 +44,19 @@ body{
   text-decoration: underline;
   color: #04AA6D;
 }
+.twenty{
+  background-image: url(../img/pizza2.jpg);
+  height: 70vh;
+  background-size: cover;
+  width: 100%;
+  color:black;
+  font-size: large;
+}
+.fifty{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:yellow;
+}
+.col-xs-4{
+  font-family: fantasy;
+  color: rgb(68, 3, 105);
+}
