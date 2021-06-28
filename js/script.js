@@ -42,7 +42,10 @@ function deliver() {
   );
 }
 
-function purchase() {
-  var totaltotal = totals + 150; 
-  document.getElementById("totaltotal").innerHTML = totaltotal;
+var deliveryFee = 150
+
+function purchase(){
+  var totals = (getSize() + getCrust() + getTopping() ) * getQuantity();
+  var totaltotal = totals + deliveryFee;
+  document.getElementById("totaltotal").innerHTML = totaltotal; 
 }
