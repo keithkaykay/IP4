@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", ready)
 function getSize() {
   var size = document.getElementById("size").value;
   return parseInt(size);
