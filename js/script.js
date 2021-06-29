@@ -90,15 +90,14 @@ function pizza2() {
 var deliveryFee = 150
 
 function purchase(){
-
-  var totals2 = (getSize2() + getCrust2() + getTopping222() + getTopping22() + getTopping32() ) * quantity();
   var totals = (getSize() + getCrust() + getTopping() + getTopping2() + getTopping3() ) * getQuantity();
+  var totals2 = (getSize2() + getCrust2() + getTopping222() + getTopping22() + getTopping32() ) * quantity();
   var totaltotal = totals + deliveryFee + totals2;
   var confirmation = confirm ("Do you want us to deliver to you?");
     if (confirmation == true) {
       txt = totaltotal;
     } else {
-      txt = totals;
+      txt = totals + totals2;
     }
     document.getElementById("totalstotals").innerHTML = txt;
 }
