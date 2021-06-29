@@ -31,7 +31,7 @@ body{
 
 .five{
   background-image: url(../img/peter-bravo-de-los-rios-OklpRh8-Sns-unsplash.jpg);
-  height: 120vh;
+  height: 150vh;
   float: right;
   background-size: cover;
   width: 100%;
@@ -62,6 +62,15 @@ body{
   color:black;
   font-size: large;
 }
+#topping2{
+  display: none;
+}
+
+#topping3{
+  display: none;
+}
+
+
 .fifty{
   font-family:Georgia, 'Times New Roman', Times, serif;
   color:rgb(0, 225, 255);

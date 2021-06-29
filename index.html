@@ -66,10 +66,31 @@
               <option value="150">Pineapples</option>
               <option value="400">Chicken</option>
             </select>
+           <label class="trident" for="topping">Do you want to add another topping?</label>
+           <br>
+           <button id="add" value="sumbit" class="btn btn-primary">Add</button> 
+           <br>
+           <select class="form-control" name="topping2" id="topping2">
+            <option value="200">Tomatoes</option>
+            <option value="300">Onions</option>
+            <option value="100">Mushrooms</option>
+            <option value="150">Pineapples</option>
+            <option value="400">Chicken</option>
+          </select>
+          <br>
+          <button id="add2" value="sumbit" class="btn btn-primary">Add</button> 
+           <br>
+           <select class="form-control" name="topping3" id="topping3">
+            <option value="200">Tomatoes</option>
+            <option value="300">Onions</option>
+            <option value="100">Mushrooms</option>
+            <option value="150">Pineapples</option>
+            <option value="400">Chicken</option>
+          </select>
             <br>
             <h4>Number</h4>
             <label for="number">How many pizzas do you want to buy?</label>
-            <input class="form-control" type="number" name="number" id="number" placeholder="1" max="" min="0" required>
+            <input class="form-control" type="number" name="number" id="number" max="" min="1" required>
             <br>
             <button type="submit" id="submit" value="sumbit" class="btn btn-primary"  onclick="totalAmount();">Order</button>
           </form>
@@ -78,6 +99,7 @@
             <h1>Price: Ksh <span id="totals"></span></h1>
           </div>
         </div>
+        <br><br><br>
         <div class="twenty">
           <div class="fifty" id="price-content">
             <h2 class="ere" >Delivery</h2>

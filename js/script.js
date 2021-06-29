@@ -13,6 +13,16 @@ function getTopping() {
   return parseInt(topping);
 }
 
+function getTopping2() {
+  var topping2 = document.getElementById("topping2").value;
+  return parseInt(topping2);
+}
+
+function getTopping3() {
+  var topping2 = document.getElementById("topping3").value;
+  return parseInt(topping3);
+}
+
 function getQuantity() {
   var number = document.getElementById("number").value;
   return parseInt(number);
@@ -45,7 +55,7 @@ function deliver() {
 var deliveryFee = 150
 
 function purchase(){
-  var totals = (getSize() + getCrust() + getTopping() ) * getQuantity();
+  var totals = (getSize() + getCrust() + getTopping() + getTopping2() + getTopping3() ) * getQuantity();
   var totaltotal = totals + deliveryFee;
   var confirmation = confirm ("Do you want us to deliver to you?");
     if (confirmation == true) {
@@ -55,3 +65,14 @@ function purchase(){
     }
     document.getElementById("totalstotals").innerHTML = txt;
 }
+
+$(document).ready(function(){
+  $("#add").click(function(){
+    $("#topping2").show();
+  });
+})
+$(document).ready(function(){
+  $("#add2").click(function(){
+    $("#topping3").show();
+  });
+})
