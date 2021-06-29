@@ -40,7 +40,7 @@
           <form onsubmit="return false" id="info" action="">
             <h4>Size</h4>
             <label for="crust">Choose your pizza size</label>
-            <select class="form-control" name="size" id="size">
+            <select class="form-control" name="size" id="size" required>
                 <option value="0"></option>
                 <option value="1500">Large</option>
                 <option value="1000">Medium</option>
@@ -49,7 +49,7 @@
             <br>
             <h4>Crust</h4>
             <label for="crust">Choose pizza crust</label>
-            <select class="form-control" name="crust" id="crust">
+            <select class="form-control" name="crust" id="crust" required>
               <option value="0"></option>
               <option value="150">Vegan Friendly</option>
               <option value="100">Glutten Free</option>
@@ -104,11 +104,14 @@
             <h1>Price: Ksh <span id="totals"></span></h1>
           </div>
         </div>
+        <br><br>
+        <h3> Do you want to order another pizza of a different type?</h3>
+        <button onclick="return false;"  id="order2" value="sumbit" class="btn btn-primary">Order another pizza</button> 
         <div class="fivesix" id="fivesix">        
           <form onsubmit="return false" id="info" action="">
             <h4>Size</h4>
-            <label for="crust">Choose your pizza size</label>
-            <select class="form-control" name="size" id="size">
+            <label for="size2">Choose your pizza size</label>
+            <select class="form-control" name="size2" id="size2" required>
                 <option value="0"></option>
                 <option value="1500">Large</option>
                 <option value="1000">Medium</option>
@@ -116,8 +119,8 @@
             </select>
             <br>
             <h4>Crust</h4>
-            <label for="crust">Choose pizza crust</label>
-            <select class="form-control" name="crust" id="crust">
+            <label for="crust2">Choose pizza crust</label>
+            <select class="form-control" name="crust2" id="crust2">
               <option value="0"></option>
               <option value="150">Vegan Friendly</option>
               <option value="100">Glutten Free</option>
@@ -128,8 +131,8 @@
             </select>
             <br>
             <h4>Topping</h4>
-            <label for="topping">Choose topping to be applied</label>
-            <select class="form-control" name="topping" id="topping">
+            <label for="topping222">Choose topping to be applied</label>
+            <select class="form-control" name="topping222" id="topping222">
               <option value="0"></option>
               <option value="200">Tomatoes</option>
               <option value="300">Onions</option>
@@ -137,11 +140,11 @@
               <option value="150">Pineapples</option>
               <option value="400">Chicken</option>
             </select>
-           <label class="trident" for="topping">Do you want to add another topping?</label>
+           <label class="trident" for="topping22">Do you want to add another topping?</label>
            <br>
-           <button id="add" value="sumbit" class="btn btn-primary">Add</button> 
+           <button id="add22" value="sumbit" class="btn btn-primary">Add</button> 
            <br>
-           <select class="form-control" name="topping2" id="topping2">
+           <select class="form-control" name="topping22" id="topping22">
             <option value="0"></option>
             <option value="200">Tomatoes</option>
             <option value="300">Onions</option>
@@ -150,9 +153,9 @@
             <option value="400">Chicken</option>
           </select>
           <br>
-          <button id="add2" value="sumbit" class="btn btn-primary">Add</button> 
+          <button id="add32" value="sumbit" class="btn btn-primary">Add</button> 
            <br>
-           <select class="form-control" name="topping3" id="topping3">
+           <select class="form-control" name="topping32" id="topping32">
             <option value="0"></option>
             <option value="200">Tomatoes</option>
             <option value="300">Onions</option>
@@ -162,14 +165,14 @@
           </select>
             <br>
             <h4>Number</h4>
-            <label for="number">How many of these pizzas do would you want to buy?</label>
-            <input class="form-control" type="number" name="number" id="number" max="" min="1" required>
+            <label for="quantity">How many of these pizzas do would you want to buy?</label>
+            <input class="form-control" type="number" name="quantity" id="quantity" max="" min="1" required>
             <br>
-            <button type="submit" id="submit" value="sumbit" class="btn btn-primary"  onclick="totalAmount();">Order</button>
+            <button class="btn btn-primary"  onclick="pizza2();">Order</button>
           </form>
           <div class="col-xs-4" id="price-content">
             <br>
-            <h1>Price: Ksh <span id="totals"></span></h1>
+            <h1>Price: Ksh <span id="pizza2"></span></h1>
           </div>
         </div>
         <br><br><br>

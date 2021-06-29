@@ -52,11 +52,48 @@ function deliver() {
   );
 }
 
+function getSize2() {
+  var size2 = document.getElementById("size2").value;
+  return parseInt(size2);
+}
+
+function getCrust2() {
+  var crust2 = document.getElementById("crust2").value;
+  return parseInt(crust2);
+}
+
+function getTopping222() {
+  var topping2 = document.getElementById("topping222").value;
+  return parseInt(topping2);
+}
+
+function getTopping22() {
+  var topping22 = document.getElementById("topping22").value;
+  return parseInt(topping22);
+}
+
+function getTopping32() {
+  var topping32 = document.getElementById("topping32").value;
+  return parseInt(topping32);
+}
+
+function quantity() {
+  var quantity = document.getElementById("quantity").value;
+  return parseInt(quantity);
+}
+
+function pizza2() {
+  var totals2 = ( getSize2()+ getCrust2() + getTopping222() + getTopping22() + getTopping32() ) * quantity(); 
+  document.getElementById("pizza2").innerHTML = totals2; 
+} 
+
 var deliveryFee = 150
 
 function purchase(){
+
+  var totals2 = (getSize2() + getCrust2() + getTopping222() + getTopping22() + getTopping32() ) * quantity();
   var totals = (getSize() + getCrust() + getTopping() + getTopping2() + getTopping3() ) * getQuantity();
-  var totaltotal = totals + deliveryFee;
+  var totaltotal = totals + deliveryFee + totals2;
   var confirmation = confirm ("Do you want us to deliver to you?");
     if (confirmation == true) {
       txt = totaltotal;
@@ -78,7 +115,25 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
+  $("#order2").click(function(){
+    $("#fivesix").show();
+  });
+})
+
+$(document).ready(function(){
   $("#add2").click(function(){
-    $("#topping3").show();
+    $("#topping22").show();
+  });
+})
+
+$(document).ready(function(){
+  $("#add32").click(function(){
+    $("#topping32").show();
+  });
+})
+
+$(document).ready(function(){
+  $("#add22").click(function(){
+    $("#topping22").show();
   });
 })
