@@ -41,6 +41,7 @@
             <h4>Size</h4>
             <label for="crust">Choose your pizza size</label>
             <select class="form-control" name="size" id="size">
+                <option value="0"></option>
                 <option value="1500">Large</option>
                 <option value="1000">Medium</option>
                 <option value="800">Small</option>
@@ -49,6 +50,7 @@
             <h4>Crust</h4>
             <label for="crust">Choose pizza crust</label>
             <select class="form-control" name="crust" id="crust">
+              <option value="0"></option>
               <option value="150">Vegan Friendly</option>
               <option value="100">Glutten Free</option>
               <option value="250">Neapolitan</option>
@@ -60,6 +62,7 @@
             <h4>Topping</h4>
             <label for="topping">Choose topping to be applied</label>
             <select class="form-control" name="topping" id="topping">
+              <option value="0"></option>
               <option value="200">Tomatoes</option>
               <option value="300">Onions</option>
               <option value="100">Mushrooms</option>
@@ -71,6 +74,7 @@
            <button id="add" value="sumbit" class="btn btn-primary">Add</button> 
            <br>
            <select class="form-control" name="topping2" id="topping2">
+            <option value="0"></option>
             <option value="200">Tomatoes</option>
             <option value="300">Onions</option>
             <option value="100">Mushrooms</option>
@@ -81,6 +85,7 @@
           <button id="add2" value="sumbit" class="btn btn-primary">Add</button> 
            <br>
            <select class="form-control" name="topping3" id="topping3">
+            <option value="0"></option>
             <option value="200">Tomatoes</option>
             <option value="300">Onions</option>
             <option value="100">Mushrooms</option>
@@ -89,7 +94,75 @@
           </select>
             <br>
             <h4>Number</h4>
-            <label for="number">How many pizzas do you want to buy?</label>
+            <label for="number">How many of these pizzas do would you want to buy?</label>
+            <input class="form-control" type="number" name="number" id="number" max="" min="1" required>
+            <br>
+            <button type="submit" id="submit" value="sumbit" class="btn btn-primary"  onclick="totalAmount();">Order</button>
+          </form>
+          <div class="col-xs-4" id="price-content">
+            <br>
+            <h1>Price: Ksh <span id="totals"></span></h1>
+          </div>
+        </div>
+        <div class="fivesix" id="fivesix">        
+          <form onsubmit="return false" id="info" action="">
+            <h4>Size</h4>
+            <label for="crust">Choose your pizza size</label>
+            <select class="form-control" name="size" id="size">
+                <option value="0"></option>
+                <option value="1500">Large</option>
+                <option value="1000">Medium</option>
+                <option value="800">Small</option>
+            </select>
+            <br>
+            <h4>Crust</h4>
+            <label for="crust">Choose pizza crust</label>
+            <select class="form-control" name="crust" id="crust">
+              <option value="0"></option>
+              <option value="150">Vegan Friendly</option>
+              <option value="100">Glutten Free</option>
+              <option value="250">Neapolitan</option>
+              <option value="300">New York Style</option>
+              <option value="200">Cheese</option>
+              <option value="350">Crispy</option>
+            </select>
+            <br>
+            <h4>Topping</h4>
+            <label for="topping">Choose topping to be applied</label>
+            <select class="form-control" name="topping" id="topping">
+              <option value="0"></option>
+              <option value="200">Tomatoes</option>
+              <option value="300">Onions</option>
+              <option value="100">Mushrooms</option>
+              <option value="150">Pineapples</option>
+              <option value="400">Chicken</option>
+            </select>
+           <label class="trident" for="topping">Do you want to add another topping?</label>
+           <br>
+           <button id="add" value="sumbit" class="btn btn-primary">Add</button> 
+           <br>
+           <select class="form-control" name="topping2" id="topping2">
+            <option value="0"></option>
+            <option value="200">Tomatoes</option>
+            <option value="300">Onions</option>
+            <option value="100">Mushrooms</option>
+            <option value="150">Pineapples</option>
+            <option value="400">Chicken</option>
+          </select>
+          <br>
+          <button id="add2" value="sumbit" class="btn btn-primary">Add</button> 
+           <br>
+           <select class="form-control" name="topping3" id="topping3">
+            <option value="0"></option>
+            <option value="200">Tomatoes</option>
+            <option value="300">Onions</option>
+            <option value="100">Mushrooms</option>
+            <option value="150">Pineapples</option>
+            <option value="400">Chicken</option>
+          </select>
+            <br>
+            <h4>Number</h4>
+            <label for="number">How many of these pizzas do would you want to buy?</label>
             <input class="form-control" type="number" name="number" id="number" max="" min="1" required>
             <br>
             <button type="submit" id="submit" value="sumbit" class="btn btn-primary"  onclick="totalAmount();">Order</button>
@@ -126,11 +199,13 @@
                 <h1>Final Price: Ksh <span id="totalstotals"></span></h1>
                 <br><br>
                 <h5>Thank you and Welcome again!</h5>
-                <br><br>
-                <button class="btn btn-primary" type="button" onClick="window.location.reload();">Order Again</button>
+                <br>
             </div>
           </div>
         </div>
+        <br><br>
+        <button id="trdf" class="btn btn-primary" type="button" onClick="window.location.reload();">Order Again</button>
+        <br>
       </div>
     </div>
     <br>

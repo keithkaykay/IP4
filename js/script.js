@@ -19,7 +19,7 @@ function getTopping2() {
 }
 
 function getTopping3() {
-  var topping2 = document.getElementById("topping3").value;
+  var topping3 = document.getElementById("topping3").value;
   return parseInt(topping3);
 }
 
@@ -29,7 +29,7 @@ function getQuantity() {
 }
 
 function totalAmount() {
-  var totals = (getSize() + getCrust() + getTopping() ) * getQuantity();
+  var totals = (getSize() + getCrust() + getTopping() + getTopping2()  + getTopping3() ) * getQuantity();
   document.getElementById("totals").innerHTML = totals; 
 } 
 
@@ -71,6 +71,12 @@ $(document).ready(function(){
     $("#topping2").show();
   });
 })
+$(document).ready(function(){
+  $("#add2").click(function(){
+    $("#topping3").show();
+  });
+})
+
 $(document).ready(function(){
   $("#add2").click(function(){
     $("#topping3").show();

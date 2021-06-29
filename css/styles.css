@@ -70,6 +70,9 @@ body{
   display: none;
 }
 
+#trdf{
+  text-align: center;
+}
 
 .fifty{
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -77,7 +80,7 @@ body{
 }
 .col-xs-4{
   font-family: fantasy;
-  color: rgb(255, 238, 6);
+  color: rgb(3, 3, 0);
 }
 .footer{
   text-align: center;
@@ -90,4 +93,18 @@ body{
 }
 .deed{
   text-decoration: underline;
+}
+
+.fivesix{
+  background-image: url(../img/pizza3.jpg);
+  height: 150vh;
+  float: right;
+  background-size: cover;
+  width: 100%;
+  color:black;
+  font-size: large;
+}
+
+#fivesix{
+  display: none;
 }
